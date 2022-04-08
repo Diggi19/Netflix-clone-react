@@ -1,0 +1,57 @@
+body {
+  margin: 0%;
+  background-color: #111;
+}
+.app__navbarshow {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 1;
+
+  /* adds delay to change from hide to show */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  padding: 0.5em;
+}
+.app__navbarhide {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  padding: 0.5em;
+
+  /* adds delay to change from show to hide */
+
+  transition-timing-function: ease-out;
+  transition: all 0.5s;
+}
+.app__contsianer {
+  width: 97%;
+  margin: auto;
+}
+
+.app__banner {
+  width: 100%;
+  height: 500px;
+  margin-left: 1em;
+}
+
+.app__rows {
+  width: 97%;
+  height: 320px;
+  background-color: black;
+}
+
+@media (max-width: 500px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .app__contsianer {
+    width: 94%;
+    margin: auto;
+  }
+}
